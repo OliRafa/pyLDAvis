@@ -64,8 +64,8 @@ def _extract_data(model, live_topics_only: bool = True) -> Dict[str, Any]:
         live_topics = None
 
     vocabulary = _get_vocabulary(model)
-    document_lengths = _get_document_lengths(model, live_topics)
-    term_frequencies = _get_term_frequencies(model, live_topics)
+    document_lengths = _get_document_lengths(model)
+    term_frequencies = _get_term_frequencies(model)
     topic_term_distributions = _get_topic_term_distributions(model, live_topics)
 
     error_message = (
